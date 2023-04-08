@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ad2a920d.css",
+    "main.js": "/static/js/main.c1f00d88.js",
+    "static/media/EXTATICA-REGULAR.OTF": "/static/media/EXTATICA-REGULAR.dd546d490d470cf7cb89.OTF",
+    "static/media/logoDark.svg": "/static/media/logoDark.9019bcac89d3ba8845c9a4d88e57653c.svg",
+    "static/media/logoLight.svg": "/static/media/logoLight.a8bc9c47c2c9f018c618ab5cb8088666.svg",
+    "index.html": "/index.html",
+    "static/media/close-round-line-icon.svg": "/static/media/close-round-line-icon.430d27c85aca25ac9b9abca7369f32ae.svg",
+    "static/media/icons8-cancel.svg": "/static/media/icons8-cancel.a196549e3014d857ed5039830a1ebfc0.svg",
+    "static/media/Search Glyph.svg": "/static/media/Search Glyph.4b934adac4faeb92512cd4cc2be0b2c9.svg",
+    "static/media/less-than.svg": "/static/media/less-than.15eb215b61dee50555d4c5068299f1f0.svg",
+    "static/media/more-than.svg": "/static/media/more-than.01b173dbe53d03a9f6713c584f736877.svg",
+    "static/media/up-arrow-svgrepo-com.svg": "/static/media/up-arrow-svgrepo-com.1a298585efc0d43d4ac34ebb40622833.svg",
+    "static/media/down-arrow-svgrepo-com.svg": "/static/media/down-arrow-svgrepo-com.5a82cea078f9a69876160c26eb9aa1b7.svg",
+    "static/media/plus-icon.svg": "/static/media/plus-icon.85e241111cacb3248e779407e0bc766c.svg",
+    "main.ad2a920d.css.map": "/static/css/main.ad2a920d.css.map",
+    "main.c1f00d88.js.map": "/static/js/main.c1f00d88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad2a920d.css",
+    "static/js/main.c1f00d88.js"
+  ]
+}
