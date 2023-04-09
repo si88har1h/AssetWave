@@ -1,0 +1,66 @@
+.delete {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 30em;
+  background-color: #fff;
+  height: 10.5rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.dark {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+.delete h2 {
+  text-align: center;
+  padding: 2.4rem 0;
+  font-size: 1.8rem;
+}
+
+.dark .cancelBtn,
+.dark .deleteBtn {
+  background-color: #2e2e2e;
+  border-top: 1px solid #ffffff33;
+}
+
+.dark .cancelBtn {
+  border-right: 1px solid #ffffff33;
+}
+.dark .cancelBtn:hover,
+.dark .deleteBtn:hover {
+  background-color: #ffffff20;
+}
+
+.cancelBtn,
+.deleteBtn {
+  outline: none;
+  width: 50%;
+  padding: 0.8rem 0;
+  font-size: 1.8rem;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 150ms ease-in;
+}
+
+.deleteBtn {
+  border-bottom-right-radius: inherit;
+  color: #ff3b30;
+}
+
+.cancelBtn {
+  border-bottom-left-radius: inherit;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  color: #007aff;
+}
+
+.cancelBtn:hover,
+.deleteBtn:hover {
+  background-color: #e4e4e4;
+}

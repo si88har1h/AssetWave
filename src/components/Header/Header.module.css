@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3.2rem;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transition: all 150ms ease-in-out;
+}
+
+.headerToggle {
+  transform: scale(0.8);
+  fill: #000;
+}
+
+.dark {
+  background-color: #404040;
+}
+
+.light {
+  background-color: #e8e8e8;
+}
+
+@media (max-width: 27em) {
+  .headerImage {
+    height: 2rem;
+    width: 16rem;
+  }
+  .headerToggle {
+    transform: scale(0.5);
+  }
+}

@@ -1,0 +1,74 @@
+.assets-container {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.assets-header p {
+  position: relative;
+  display: inline-block;
+  font-size: 1.8rem;
+  background-color: #e8e8e8;
+  padding: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.assets-header p:hover {
+  font-weight: 600;
+}
+
+.dark .assets-header p {
+  background-color: #404040;
+  color: #fff;
+}
+
+.assets-grid {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 30rem));
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  max-width: 90vw;
+}
+
+.asset-item {
+  border: 4px solid #c1c1c1;
+  border-radius: 20px;
+  width: 30rem;
+  height: 30rem;
+}
+.assets-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 150ms ease-in;
+  cursor: pointer;
+}
+
+.assets-add:hover,
+.assets-add:focus {
+  background-color: #c1c1c148;
+}
+
+.assets-add img {
+  display: block;
+  width: 10em;
+}
+
+.dark .assets-add {
+  border-color: #404040;
+  stroke: #404040;
+}
+
+.dark .assets-add:hover,
+.dark .assets-add:focus {
+  background-color: #40404040;
+}
+
+.dark img {
+  stroke: #404040;
+}

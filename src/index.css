@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Extatica";
+  src: url("./fonts/EXTATICA-REGULAR.OTF") format("opentype");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "extatica";
+}
+
+.dark__mode {
+  background-color: #000;
+}
+
+button,
+input {
+  font-family: "extatica";
+}
