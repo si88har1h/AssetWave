@@ -7,10 +7,15 @@ import {
   Tooltip,
   CartesianGrid,
 } from "recharts";
+import { ThemeContext } from "../../context/theme-context";
+import { useContext } from "react";
 import styles from "./ChartItem.module.css";
 
 const ChartItem = (props) => {
+  const themeCtx = useContext(ThemeContext);
+  const cartesianOpacity = themeCtx.theme === "dark" ? 0.2 : 1;
   const stroke = props.change > 0 ? "#00c624" : "red";
+
   return (
     <ResponsiveContainer height="50%">
       <AreaChart
@@ -30,19 +35,20 @@ const ChartItem = (props) => {
             fontSize: "1.4rem",
           }}
           tickCount={3}
-          minTickGap={15}
+          minTickGap={50}
         />
         <YAxis
           type="number"
           domain={["0", "auto"]}
           orientation="right"
           tickLine={false}
-          tickFormatter={(tick) => `${props.checkPrice(tick)}`}
+          tickFormatter={(tick) => `${props.checkPrice(tick, "tick")}`}
           tick={{
             fill: `#a8a8a8`,
             fontSize: "1.4rem",
           }}
           unit={"$"}
+          width={props.checkPrice(props.price, "tick").length > 8 ? 80 : 60}
         />
         <defs>
           <linearGradient id={`color${stroke}`} x1="0" y1="0" x2="0" y2="1">
@@ -56,7 +62,7 @@ const ChartItem = (props) => {
           strokeWidth={3}
           fill={`url(#color${stroke})`}
         />
-        <CartesianGrid opacity={0.5} />
+        <CartesianGrid opacity={cartesianOpacity} />
         <Tooltip
           content={<CustomTooltip checkPrice={props.checkPrice} />}
           payload={props.priceData}
@@ -70,7 +76,7 @@ const CustomTooltip = ({ active, payload, checkPrice }) => {
   if (active) {
     return (
       <div className={styles.tooltip}>
-        <h4>$ {checkPrice(payload[0].payload.price)}</h4>
+        <h4>$ {checkPrice(payload[0].payload.price, "tooltip")}</h4>
         <p>at {payload[0].payload.id}</p>
       </div>
     );

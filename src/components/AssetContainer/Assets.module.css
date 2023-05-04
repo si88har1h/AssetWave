@@ -12,12 +12,7 @@
   background-color: #e8e8e8;
   padding: 1.2rem;
   border-radius: 8px;
-  cursor: pointer;
   letter-spacing: 1px;
-}
-
-.assets-header p:hover {
-  font-weight: 600;
 }
 
 .dark .assets-header p {

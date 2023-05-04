@@ -94,3 +94,12 @@
   padding: 1.5rem;
   border-radius: 5px;
 }
+
+.not {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.dark .not {
+  color: #fff;
+}

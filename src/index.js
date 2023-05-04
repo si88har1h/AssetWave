@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import ThemeProvider from "./context/ThemeProvider";
 import AssetProvider from "./context/AssetProvider";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,3 +16,5 @@ root.render(
     </AssetProvider>
   </React.StrictMode>
 );
+
+serviceWorkerRegistration.register();
